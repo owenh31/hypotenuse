@@ -1,0 +1,199 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication2;
+
+import java.util.Scanner;
+
+public class JavaApplication2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner inp = new Scanner(System.in);
+        System.out.println("Is it a leap year? (yes or no)");
+        String years = inp.nextLine();
+        if (years.equals("yes")) {
+            int january = 31;
+            int febuary = 29;
+            int march = 31;
+            int april = 30;
+            int may = 31;
+            int june = 30;
+            int july = 31;
+            int august = 31;
+            int september = 30;
+            int october = 31;
+            int november = 30;
+            int december = 31;
+            System.out.println("put the month (word) then the day");
+            String month = inp.nextLine();
+            int day = inp.nextInt();
+
+            if (month.equals("january")) {
+                int dl = 366 - day;
+                System.out.println("it is the " + day + "th day of the year");
+                System.out.println("there are " + dl + " days left this year");
+            }
+            if (month.equals("febuary")) {
+                int dl = 366 - january - day;
+                int dt = day + january;
+                System.out.println("it is the " + dt + "th day of the year");
+                System.out.println("there are " + dl + " days left this year");
+            }
+            if (month.equals("march")) {
+                int dl = 366 - january - day - febuary;
+                int dt = day + january + febuary;
+                System.out.println("it is the " + dt + "th day of the year");
+                System.out.println("there are " + dl + " days left this year");
+            }
+            if (month.equals("april")) {
+                int dl = 366 - january - day - febuary - march;
+                int dt = day + january + febuary + march;
+                System.out.println("it is the " + dt + "th day of the year");
+                System.out.println("there are " + dl + " days left this year");
+            }
+            if (month.equals("may")) {
+                int dl = 366 - january - day - febuary - march - april;
+                int dt = day + january + febuary + march + april;
+                System.out.println("it is the " + dt + "th day of the year");
+                System.out.println("there are " + dl + " days left this year");
+            }
+            if (month.equals("june")) {
+                int dl = 366 - january - day - febuary - march - april - may;
+                int dt = day + january + febuary + march + april + may;
+                System.out.println("it is the " + dt + "th day of the year");
+                System.out.println("there are " + dl + " days left this year");
+            }
+            if (month.equals("july")) {
+                int dl = 366 - january - day - febuary - march - april - may - june;
+                int dt = day + january + febuary + march + april + may + june;
+                System.out.println("it is the " + dt + "th day of the year");
+                System.out.println("there are " + dl + " days left this year");
+            }
+            if (month.equals("august")) {
+                int dl = 366 - january - day - febuary - march - april - may - june - july;
+                int dt = day + january + febuary + march + april + may + june + july;
+                System.out.println("it is the " + dt + "th day of the year");
+                System.out.println("there are " + dl + " days left this year");
+            }
+            if (month.equals("september")) {
+                int dl = 366 - january - day - febuary - march - april - may - june - july - august;
+                int dt = day + january + febuary + march + april + may + june + july + august;
+                System.out.println("it is the " + dt + "th day of the year");
+                System.out.println("there are " + dl + " days left this year");
+            }
+            if (month.equals("october")) {
+                int dl = 366 - january - day - febuary - march - april - may - june - july - august - september;
+                int dt = day + january + febuary + march + april + may + june + july + august + september;
+                System.out.println("it is the " + dt + "th day of the year");
+                System.out.println("there are " + dl + " days left this year");
+            }
+            if (month.equals("november")) {
+                int dl = 366 - january - day - febuary - march - april - may - june - july - august - september - october;
+                int dt = day + january + febuary + march + april + may + june + july + august + september + october;
+                System.out.println("it is the " + dt + "th day of the year");
+                System.out.println("there are " + dl + " days left this year");
+            }
+            if (month.equals("december")) {
+                int dl = 366 - january - day - febuary - march - april - may - june - july - august - september - october - november;
+                int dt = day + january + febuary + march + april + may + june + july + august + september + october + november;
+                System.out.println("it is the " + dt + "th day of the year");
+                System.out.println("there are " + dl + " days left this year");
+            }
+        } else {
+            int january = 31;
+            int febuary = 28;
+            int march = 31;
+            int april = 30;
+            int may = 31;
+            int june = 30;
+            int july = 31;
+            int august = 31;
+            int september = 30;
+            int october = 31;
+            int november = 30;
+            int december = 31;
+            System.out.println("put the month (word) then the day");
+            String month = inp.nextLine();
+            int day = inp.nextInt();
+
+            if (month.equals("january")) {
+                int dl = 365 - day;
+                System.out.println("it is the " + day + "th day of the year");
+                System.out.println("there are " + dl + " days left this year");
+            }
+            if (month.equals("febuary")) {
+                int dl = 365 - january - day;
+                int dt = day + january;
+                System.out.println("it is the " + dt + "th day of the year");
+                System.out.println("there are " + dl + " days left this year");
+            }
+            if (month.equals("march")) {
+                int dl = 365 - january - day - febuary;
+                int dt = day + january + febuary;
+                System.out.println("it is the " + dt + "th day of the year");
+                System.out.println("there are " + dl + " days left this year");
+            }
+            if (month.equals("april")) {
+                int dl = 365 - january - day - febuary - march;
+                int dt = day + january + febuary + march;
+                System.out.println("it is the " + dt + "th day of the year");
+                System.out.println("there are " + dl + " days left this year");
+            }
+            if (month.equals("may")) {
+                int dl = 365 - january - day - febuary - march - april;
+                int dt = day + january + febuary + march + april;
+                System.out.println("it is the " + dt + "th day of the year");
+                System.out.println("there are " + dl + " days left this year");
+            }
+            if (month.equals("june")) {
+                int dl = 365 - january - day - febuary - march - april - may;
+                int dt = day + january + febuary + march + april + may;
+                System.out.println("it is the " + dt + "th day of the year");
+                System.out.println("there are " + dl + " days left this year");
+            }
+            if (month.equals("july")) {
+                int dl = 365 - january - day - febuary - march - april - may - june;
+                int dt = day + january + febuary + march + april + may + june;
+                System.out.println("it is the " + dt + "th day of the year");
+                System.out.println("there are " + dl + " days left this year");
+            }
+            if (month.equals("august")) {
+                int dl = 365 - january - day - febuary - march - april - may - june - july;
+                int dt = day + january + febuary + march + april + may + june + july;
+                System.out.println("it is the " + dt + "th day of the year");
+                System.out.println("there are " + dl + " days left this year");
+            }
+            if (month.equals("september")) {
+                int dl = 365 - january - day - febuary - march - april - may - june - july - august;
+                int dt = day + january + febuary + march + april + may + june + july + august;
+                System.out.println("it is the " + dt + "th day of the year");
+                System.out.println("there are " + dl + " days left this year");
+            }
+            if (month.equals("october")) {
+                int dl = 365 - january - day - febuary - march - april - may - june - july - august - september;
+                int dt = day + january + febuary + march + april + may + june + july + august + september;
+                System.out.println("it is the " + dt + "th day of the year");
+                System.out.println("there are " + dl + " days left this year");
+            }
+            if (month.equals("november")) {
+                int dl = 365 - january - day - febuary - march - april - may - june - july - august - september - october;
+                int dt = day + january + febuary + march + april + may + june + july + august + september + october;
+                System.out.println("it is the " + dt + "th day of the year");
+                System.out.println("there are " + dl + " days left this year");
+            }
+            if (month.equals("december")) {
+                int dl = 365 - january - day - febuary - march - april - may - june - july - august - september - october - november;
+                int dt = day + january + febuary + march + april + may + june + july + august + september + october + november;
+                System.out.println("it is the " + dt + "th day of the year");
+                System.out.println("there are " + dl + " days left this year");
+            }
+        }
+    }
+
+}
